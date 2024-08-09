@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./output.css" />
+    <style>
+      .underline-container {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+      }
+      .underline {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        background-color: black;
+        transform-origin: left;
+      }
+      .underline-container:hover .underline {
+        animation: underlineIn 0.3s ease-out forwards;
+      }
+      .underline-container:not(:hover) .underline {
+        animation: underlineOut 0.3s ease-in forwards;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -52,11 +74,11 @@
             <h3 class="md:hidden lg:block">All Categories</h3>
           </span>
           <ul class="hidden md:flex w-3/5 md:w-4/5 lg:w-3/5 justify-evenly text-txt-light">
-            <li><a class="text-[#007580] active:text-[#007580]" href="#">Home</a></li>
-            <li><a class="active:text-[#007580] " href="#">Shop</a></li>
-            <li><a class="active:text-[#007580]" href="#">Product</a></li>
-            <li><a class="active:text-[#007580]" href="#">Page</a></li>
-            <li><a class="active:text-[#007580]" href="#">About</a></li>
+            <li class="hover:bg-primary p-2 rounded-md"><a class="text-[#007580] active:text-[#007580]" href="#">Home</a></li>
+            <li class="hover:bg-primary p-2 rounded-md"><a class="active:text-[#007580] " href="#">Shop</a></li>
+            <li class="hover:bg-primary p-2 rounded-md"><a class="active:text-[#007580]" href="#">Product</a></li>
+            <li class="hover:bg-primary p-2 rounded-md"><a class="active:text-[#007580]" href="#">Page</a></li>
+            <li class="hover:bg-primary p-2 rounded-md"><a class="active:text-[#007580]" href="#">About</a></li>
           </ul>
         </div>
         <span class="flex text-sm lg:text-lg font-normal">
