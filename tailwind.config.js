@@ -8,6 +8,9 @@ module.exports = {
         'btn-color':'#029FAE',
         'txt-light':'#636270'
       },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      },  
     
     },
 
