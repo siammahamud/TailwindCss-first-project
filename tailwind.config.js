@@ -21,8 +21,19 @@ module.exports = {
         '75%': { borderTopColor: 'cyan', borderRightColor: 'cyan', borderBottomColor: 'cyan', borderLeftColor: 'cyan' },
         '100%': { borderTopColor: 'transparent', borderRightColor: 'transparent', borderBottomColor: 'transparent', borderLeftColor: 'cyan' },
       },
+      'glow':{
+        '0%, 100%': {
+          'box-shadow': '0 0 10px #029FAE',
+        },
+        '50%': {
+            'box-shadow': '0 0 20px #029FAE',
+          },
+
+      }
+
     },
     animation: {
+      'glow': 'glow 2s infinite',
       'border-animate': 'border-animate 2s linear infinite',
     },
   },

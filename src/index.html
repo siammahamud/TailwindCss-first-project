@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./output.css" />
   </head>
   <body class="font-inter">
-    <div class="w-full overflow-hidden">
+    <div class="w-full">
       <header>
         <!-- top section of navbar -->
         <div
@@ -42,12 +42,12 @@
           class="bg-primary px-5 md:px-12 lg:px-48 py-3 md:h-[84px] gap-2 flex justify-between md:justify-between text-sm md:text-lg capitalize items-center"
         >
           <img
-            class="lg:hidden size-5 md:size-8"
+            class="lg:hidden size-5 md:size-8 hover:animate-glow"
             src="./images/Logo Icon.svg"
             alt="logo-icon"
           />
           <img
-            class="h-10 hidden lg:block md:w-32 lg:w-40"
+            class="h-10 hidden lg:block md:w-32 lg:w-40 hover:animate-glow rounded-lg"
             src="./images/Logo.svg"
             alt="Comforty-logo"
           />
@@ -154,7 +154,7 @@
                 Best Furniture Collection for your interior.
               </h1>
               <button
-                class="mx-auto md:mx-0 block mt-5 md:mt-0 px-4 py-2 bg-btn-color rounded-md text-white hover:shadow-md hover:shadow-btn-color"
+                class="hover:drop-shadow-[2px_1px_5px_cyan] mx-auto md:mx-0 block mt-5 md:mt-0 px-4 py-2 bg-btn-color rounded-md text-white"
               >
                 Shop Now
                 <i class="ml-2 fa-solid fa-arrow-right-long"></i>
@@ -395,73 +395,75 @@
         </span>
       </div>
       <!-- top Categories product container  -->
-      <div
-        class="mx-auto w-10/12 lg:w-[115%] lg:-ml-28 h-auto pb-8 md:pb-12 lg:pb-20 bg-white grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-10"
-      >
-        <div class="opacity-20 hidden lg:block">
-          <div class="">
-            <img
-              class="h-[250px] scale-x-150 translate-x-[50px] w-auto"
-              src="./images/top-products/Image.svg"
-              alt="top-products"
-            />
-          </div>
-          <div class="bg-black text-white p-3 rounded-b-md">
-            <h3 class="text-lg font-medium">Wing Chair</h3>
-            <p class="text-xs text-gray-200">3,585 products</p>
-          </div>
-        </div>
+<div class="overflow-hidden w-full">
+  <div
+  class="mx-auto w-10/12 lg:w-[115%] lg:-ml-28 h-auto pb-8 md:pb-12 lg:pb-20 bg-white grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-10"
+>
+  <div class="opacity-20 hidden lg:block">
+    <div class="">
+      <img
+        class="h-[250px] scale-x-150 translate-x-[50px] w-auto"
+        src="./images/top-products/Image.svg"
+        alt="top-products"
+      />
+    </div>
+    <div class="bg-black text-white p-3 rounded-b-md">
+      <h3 class="text-lg font-medium">Wing Chair</h3>
+      <p class="text-xs text-gray-200">3,585 products</p>
+    </div>
+  </div>
 
-        <div class="">
-          <img
-            class=""
-            src="./images/top-products/Image1.svg"
-            alt="top-products"
-          />
-          <div class="bg-black text-white p-3">
-            <h3 class="text-lg font-medium">Wing Chair</h3>
-            <p class="text-xs text-gray-200">3,585 products</p>
-          </div>
-        </div>
+  <div class="">
+    <img
+      class=""
+      src="./images/top-products/Image1.svg"
+      alt="top-products"
+    />
+    <div class="bg-black text-white p-3">
+      <h3 class="text-lg font-medium">Wing Chair</h3>
+      <p class="text-xs text-gray-200">3,585 products</p>
+    </div>
+  </div>
 
-        <div class="">
-          <img
-            class=""
-            src="./images/top-products/Image2.svg"
-            alt="top-products"
-          />
-          <div class="bg-black text-white p-3">
-            <h3 class="text-lg font-medium">Wing Chair</h3>
-            <p class="text-xs text-gray-200">3,585 products</p>
-          </div>
-        </div>
+  <div class="">
+    <img
+      class=""
+      src="./images/top-products/Image2.svg"
+      alt="top-products"
+    />
+    <div class="bg-black text-white p-3">
+      <h3 class="text-lg font-medium">Wing Chair</h3>
+      <p class="text-xs text-gray-200">3,585 products</p>
+    </div>
+  </div>
 
-        <div class="">
-          <img
-            class=""
-            src="./images/top-products/Image3.svg"
-            alt="top-products"
-          />
-          <div class="bg-black text-white p-3">
-            <h3 class="text-lg font-medium">Wing Chair</h3>
-            <p class="text-xs text-gray-200">3,585 products</p>
-          </div>
-        </div>
+  <div class="">
+    <img
+      class=""
+      src="./images/top-products/Image3.svg"
+      alt="top-products"
+    />
+    <div class="bg-black text-white p-3">
+      <h3 class="text-lg font-medium">Wing Chair</h3>
+      <p class="text-xs text-gray-200">3,585 products</p>
+    </div>
+  </div>
 
-        <div class="opacity-20 hidden lg:block">
-          <div class="">
-            <img
-              class="h-[250px] scale-x-150 translate-x-[40px] w-auto"
-              src="./images/top-products/Image4.svg"
-              alt="top-products"
-            />
-          </div>
-          <div class="bg-black text-white p-3 rounded-b-md">
-            <h3 class="text-lg font-medium">Wing Chair</h3>
-            <p class="text-xs text-gray-200">3,585 products</p>
-          </div>
-        </div>
-      </div>
+  <div class="opacity-20 hidden lg:block">
+    <div class="">
+      <img
+        class="h-[250px] scale-x-150 translate-x-[40px] w-auto"
+        src="./images/top-products/Image4.svg"
+        alt="top-products"
+      />
+    </div>
+    <div class="bg-black text-white p-3 rounded-b-md">
+      <h3 class="text-lg font-medium">Wing Chair</h3>
+      <p class="text-xs text-gray-200">3,585 products</p>
+    </div>
+  </div>
+</div>
+</div>
       <!-- our products  -->
       <div>
         <h1 class="text-2xl md:text-4xl text-center font-bold">Our Products</h1>
@@ -719,7 +721,7 @@
         </div>
         <!-- review card container  -->
         <div
-          class="w-full lg:w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-10"
+          class="w-full lg:w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-10 md:pb-10"
         >
         <!-- review card 01 -->
             <div
@@ -897,8 +899,69 @@
             </div>
           </div>
         </div>
+        <!-- footer section  -->
+         <footer class="mt-20 md:mt-44">
+          <!-- main footer  -->
+         <div class="w-full border-y-2 border-primary my-6">
+          <div class="w-10/12 md:w-[95%] lg:w-10/12 mx-auto grid grid-cols-3 justify-between md:grid-cols-[2fr_1fr_1fr_2fr] py-12 gap-5   ">
+            <div class="space-y-4 ">
+              <img src="./images/Logo.svg" alt="logo.svg">
+              <p class="text-txt-light text-xs md:text-sm">Vivamus tristique odio sit amet velit semper, eu posuere turpis interdum. Cras egestas purus</p>
+              <span class="space-x-3 block w-[200%] md:w-auto">
+                <i class="brand-icons fa-brands fa-facebook"></i>
+                <i class="brand-icons fa-brands fa-twitter"></i>
+                <i class="brand-icons fa-brands fa-instagram"></i>
+                <i class="brand-icons fa-brands fa-linkedin"></i>
+                <i class="brand-icons fa-brands fa-youtube"></i>
+              </span>
+            </div>
+              <ul class="text-xs md:text-sm space-y-1 font-thin ">
+                <li class="text-sm md:text-base font-bold text-txt-light">CATEGORY  </li>
+                <li class="ftr-links"><a href="#">Sofa</a></li>
+                <li class="ftr-links"><a href="#">Armchair</a></li>
+                <li class="ftr-links"><a href="#">Wing Chair</a></li>
+                <li class="ftr-links"><a href="#">Desk Chair</a></li>
+                <li class="ftr-links"><a href="#">Wooden Chair</a></li>
+                <li class="ftr-links"><a href="#">Park Bench</a></li>
+              </ul>
+              <ul class="text-xs md:text-sm space-y-1 font-thin ">
+                <li class="text-sm md:text-base font-bold text-txt-light">SUPPORT</li>
+                <li class="ftr-links"><a href="">Help & Support</a></li>
+                <li class="ftr-links"><a href="">Terms & Conditions</a></li>
+                <li class="ftr-links"><a href="">Privacy Policy</a></li>
+                <li class="ftr-links"><a href="">Help</a></li>
+              </ul>
 
-      <div class="bg-pink-100 h-[600px]"></div>
+              <div class="space-y-4 col-span-3 md:col-span-1 justify-center order-first md:order-none">
+                <p class="text-sm md:text-base font-bold text-txt-light">NEWSLATER</p>
+                <span class="flex">
+                  <input class="rounded-md text-sm px-3 py-1 focus:outline-none focus:ring-2 focus:ring-btn-color border border-[#E1E3E5]" type="text" placeholder="Your email">
+                  <button class=" border-2 border-transparent hover:animate-border-animate bg-btn-color ml-2 px-2 py-1   text-white rounded-md">Subscribe</button>
+                </span>
+                <p class="text-xs md:text-sm text-txt-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, aliquam.</p>
+              </div>
+
+          </div>
+
+         </div>
+        <!-- sub footer  -->
+         <div class="flex flex-col md:flex-row justify-between items-center px-8 md:px-24 lg:px-32">
+          
+            <p class="text-xs text-gray-500">@ 2024-Blogy - Designed & Developed by <span class="text-black">Siam Mahamud</span> </p>
+            <span class="flex  opacity-30 gap-4 items-center">
+              <div class="flex">
+                <div class="mix-blend-multiply size-6 md:size-10 bg-cyan-400  rounded-full"></div>
+                <div class="mix-blend-multiply size-6 md:size-10 -ml-6 bg-indigo-400 rounded-full"></div>
+              </div>
+              <img class="size-8 md:size-12" src="./images/footer/american-express-svgrepo-com.svg" alt="american-express-svgrepo-com.svg">
+              <img class="w-20" src="./images/footer/paypal-svgrepo-com.svg" alt="paypal-svgrepo-com.sv">
+              <img class="size-8 md:size-12" src="./images/footer/visa-svgrepo-com.svg" alt="visa-svgrepo-com.svg">
+              
+            </span>
+         </div>
+         </footer>
+
+      
     </div>
   </body>
 </html>

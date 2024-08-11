@@ -17,5 +17,13 @@
     .product-heart-icon{
         @apply hover:bg-red-400 cursor-pointer transition-all duration-300 delay-75 invisible group-hover:visible  absolute top-2 right-2 lg:top-3 lg:right-4 size-8 rounded-md bg-white;
     };
+    .brand-icons{
+        @apply hover:text-btn-color hover:ring-1 hover:ring-offset-8 hover:ring-btn-color rounded-full transition-all duration-300 cursor-pointer;
+    };
+    .ftr-links{
+        @apply hover:underline underline-offset-4 decoration-[#007580] hover:text-[#007580];
+
+    };
+   
 
 }
