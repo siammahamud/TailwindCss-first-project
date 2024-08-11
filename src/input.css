@@ -4,9 +4,18 @@
 
 
 @layer components{
-    .discount {
-        @apply
-     
+    .arrow-style {
+        @apply   bg-primary text-btn-color hover:bg-btn-color hover:text-white p-2 rounded-full cursor-pointer transition-all duration-500;
+        
+    };
+    .product-new-button{
+        @apply transition-all duration-300 delay-75 text-white absolute top-2 left-2 lg:top-4 lg:left-4 px-2 py-1 bg-[#01AD5A] rounded-sm text-xs;
+    };
+    .product-sales-button{
+        @apply  transition-all duration-300 delay-75 text-white absolute top-2 left-2 lg:top-4 lg:left-4 px-2 py-1 bg-[#F5813F] rounded-sm text-xs;
     }
+    .product-heart-icon{
+        @apply hover:bg-red-400 cursor-pointer transition-all duration-300 delay-75 invisible group-hover:visible  absolute top-2 right-2 lg:top-3 lg:right-4 size-8 rounded-md bg-white;
+    };
 
 }
