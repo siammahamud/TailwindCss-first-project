@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors:{
+        
         'primary':'#F0F2F3',
         'btn-color':'#029FAE',
         'txt-light':'#636270'
@@ -29,12 +30,20 @@ module.exports = {
             'box-shadow': '0 0 20px #029FAE',
           },
 
+      },
+      'floating':{
+        '0%': { transform:'translateY(-100%)'},
+        '25%':{ transform:'translateY(-75%)'},
+        '50%':{ transform:'translateY(-50%)'},
+        '75%':{ transform:'translateY(-25%)'},
+        '100%':{transform:'translateY(0%)'},
       }
 
     },
     animation: {
       'glow': 'glow 2s infinite',
-      'border-animate': 'border-animate 2s linear infinite',
+      'border-animate': 'border-animate 3s linear infinite',
+      'floating':'floating 3s linear 1'
     },
   },
 

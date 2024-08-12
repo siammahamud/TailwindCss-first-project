@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+    input{
+        @apply focus:outline-none focus:ring-1 focus:ring-btn-color
+    }
+};
+
+
+
 
 @layer components{
     .arrow-style {
@@ -21,9 +29,14 @@
         @apply hover:text-btn-color hover:ring-1 hover:ring-offset-8 hover:ring-btn-color rounded-full transition-all duration-300 cursor-pointer;
     };
     .ftr-links{
-        @apply hover:underline underline-offset-4 decoration-[#007580] hover:text-[#007580];
+        @apply hover:underline underline-offset-4 decoration-[#007580] hover:text-[#007580] transition-all duration-500;
 
     };
+    .button-hover-effect{
+        @apply
+            hover:drop-shadow-[0px_0px_5px_#029FAE] hover:border-4 hover:border-cyan-200 border-4 border-transparent ;
+        
+    }
    
 
 }
